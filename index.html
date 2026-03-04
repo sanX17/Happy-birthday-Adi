@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Happy Birthday My Love ❤️</title>
+<title>Happy Birthday My ❤️</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 <style>
   /* =========================================
@@ -895,7 +895,7 @@
 <!-- =====================
      MUSIC TOGGLE BUTTON
 ===================== -->
-<button id="music-btn" title="Toggle Music" aria-label="Toggle background music">🎵</button>
+<!--<button id="music-btn" title="Toggle Music" aria-label="Toggle background music">🎵</button>-->
 
 <!-- =====================
      SECTION 1 – HERO
@@ -977,7 +977,7 @@
       <div class="gallery-info">
         <span class="gallery-info-num">04</span>
         <div class="gallery-info-text">
-          <span class="gallery-date">Quiet evenings</span>
+          <span class="gallery-date">Quiet</span>
           <p class="gallery-caption">Youuuuuuuuu</p>
         </div>
       </div>
@@ -1378,31 +1378,31 @@ noteObserver.observe(noteSection);
 })();
 
 
-(function() {
-  const btn = document.getElementById('music-btn');
-  const audio = document.getElementById('bg-music');
-  let playing = false;
+// (function() {
+//   const btn = document.getElementById('music-btn');
+//   const audio = document.getElementById('bg-music');
+//   let playing = false;
 
-  btn.addEventListener('click', () => {
-    if (!audio.src || audio.src === window.location.href) {
-      /* No audio source – show visual feedback only */
-      playing = !playing;
-      btn.textContent = playing ? '🎶' : '🎵';
-      btn.classList.toggle('playing', playing);
-      return;
-    }
-    if (playing) {
-      audio.pause();
-      btn.textContent = '🎵';
-      btn.classList.remove('playing');
-    } else {
-      audio.play().catch(() => {});
-      btn.textContent = '🎶';
-      btn.classList.add('playing');
-    }
-    playing = !playing;
-  });
-})();
+//   btn.addEventListener('click', () => {
+//     if (!audio.src || audio.src === window.location.href) {
+//       /* No audio source – show visual feedback only */
+//       playing = !playing;
+//       btn.textContent = playing ? '🎶' : '🎵';
+//       btn.classList.toggle('playing', playing);
+//       return;
+//     }
+//     if (playing) {
+//       audio.pause();
+//       btn.textContent = '🎵';
+//       btn.classList.remove('playing');
+//     } else {
+//       audio.play().catch(() => {});
+//       btn.textContent = '🎶';
+//       btn.classList.add('playing');
+//     }
+//     playing = !playing;
+//   });
+// })();
 </script>
 </body>
 </html>
